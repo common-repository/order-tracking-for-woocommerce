@@ -1,0 +1,365 @@
+/* Header */
+.sn-ot-header {
+    padding: 20px;
+    margin: 0 20px;
+    background-color: #ffffff;
+}
+.sn-ot-header h2 {
+    color: #707070;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0 0 5px 0;
+}
+.sn-ot-header p {
+    margin: 0;
+    color: #707070;
+    font-size: 16px;
+}
+/*--------*/
+
+/* Message */
+.sn-ot-message {
+    margin: -20px 0 20px 0 !important;
+    border-top: 0 !important;
+    border-right: 0 !important;
+    border-bottom: 0 !important;
+    box-shadow: none !important;
+}
+/*---------*/
+
+/* Left Navigation */
+.sn-ot-navigation-box {
+    float: left;
+    width: 260px;
+    color: #707070;
+}
+.sn-ot-navigation-box .nav-link {
+    display: block;
+    color: inherit;
+    font-size: 18px;
+    position: relative;
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    background-color: #ffffff;
+}
+.sn-ot-navigation-box .nav-link.icon-nav {
+    padding: 9px 10px 9px 10px;
+}
+.sn-ot-navigation-box .nav-link .icon {
+    margin-right: 5px;
+    width: 30px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.sn-ot-navigation-box .nav-link .icon img {
+    width: 28px;
+    display: block;
+    margin: auto;
+}
+.sn-ot-navigation-box .nav-link:focus {
+    outline: none;
+    box-shadow: none;
+}
+.sn-ot-navigation-box .nav-link:hover {
+    color: #0085ba;
+}
+.sn-ot-navigation-box .nav-link .badge {
+    font-size: 12px;
+    float: right;
+    padding: 0 5px;
+    border-radius: 3px;
+    background-color: #e5e5e5;
+}
+.sn-ot-navigation-box .nav-link.icon-nav .badge {
+    margin-top: 5px;
+}
+.sn-ot-navigation-box .nav-link.active {
+    color: #ffffff;
+    position: relative;
+    background-color: #0085ba;
+}
+.sn-ot-navigation-box .nav-link.active .badge {
+    color: #0085ba;
+}
+.sn-ot-navigation-box .nav-link.active:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: -11px;
+    border: solid 24px #0085ba;
+    border-left-width: 11px;
+    border-right: 0;
+    border-bottom-color: transparent;
+    border-top-color: transparent;
+}
+.sn-ot-navigation-box .support-links {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.sn-ot-navigation-box .support-links a {
+
+}
+@media (max-width: 1000px) {
+    .sn-ot-navigation-box {
+        float: none;
+        width: auto;
+        overflow: hidden;
+    }
+    .sn-ot-navigation-box .nav-link {
+        width: 43%;
+        float: left;
+    }
+    .sn-ot-navigation-box .nav-link:nth-child(even) {
+        float: right;
+    }
+    .sn-ot-navigation-box .nav-link.active:after {
+        content: none;
+    }
+}
+@media (max-width: 700px) {
+    .sn-ot-navigation-box .nav-link {
+        width: 40%;
+        float: left;
+    }
+}
+@media (max-width: 500px) {
+    .sn-ot-navigation-box .nav-link {
+        width: 100%;
+        float: none !important;
+    }
+}
+/*-----------------*/
+
+/* Box Section  */
+.sn-ot-box-section {
+    margin: 40px 20px 0 20px;
+}
+/*--------------*/
+
+/* Form Controls */
+.sn-ot-form .clear {
+    clear: right;
+}
+.sn-ot-form .input-row .input-group.left {
+    display: inline-block;
+    vertical-align: middle;
+    width: 48%;
+}
+.sn-ot-form .input-row .input-group.right {
+    float: right;
+    width: 48%;
+}
+.sn-ot-form .input-group {
+    margin-bottom: 20px;
+    position: relative;
+}
+.sn-ot-form .input-group.inline {
+    margin-bottom: 0;
+    display: inline-block;
+}
+.sn-ot-form .input-row:last-child .input-group {
+    margin-bottom: 0;
+}
+.sn-ot-form .input-group:last-child {
+    margin-bottom: 0;
+}
+.sn-ot-form .input-group .control-label {
+    color: #707070;
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.sn-ot-form .input-group .form-control {
+    display: block;
+    width: 100%;
+    padding: 5px 10px;
+    max-width: none;
+    border-radius: 0;
+    border: solid 1px #C6C6C6;
+}
+.sn-ot-form .input-group label.switch {
+    position: relative;
+    display: inline-block;
+    margin: 0 10px 5px 0;
+    width: 60px;
+    height: 35px;
+}
+.sn-ot-form .input-group input[type=checkbox].form-control {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    margin: 0;
+    outline: none;
+    border: solid 0 transparent;
+    box-shadow: none;
+}
+.sn-ot-form .input-group label.switch .switch-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 30px;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+.sn-ot-form .input-group label.switch .switch-slider:before {
+    position: absolute;
+    content: "";
+    height: 27px;
+    width: 27px;
+    left: 4px;
+    bottom: 4px;
+    border-radius: 50%;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+.sn-ot-form .input-group input[type=checkbox]:checked + .switch-slider {
+    background-color: #0085ba;
+}
+.sn-ot-form .input-group input[type=checkbox]:checked + .switch-slider:before {
+    -webkit-transform: translateX(25px);
+    -ms-transform: translateX(25px);
+    transform: translateX(25px);
+}
+.sn-ot-form .input-group .select2 {
+    display: block;
+    width: 100% !important;
+}
+.sn-ot-form .input-group .select2:focus,
+.sn-ot-form .input-group .select2 .selection,
+.sn-ot-form .input-group .select2 .select2-selection {
+    outline: none;
+}
+.sn-ot-form .input-group .select2 .select2-selection--multiple {
+    box-shadow: none;
+    border: solid 1px #c6c6c6;
+}
+.sn-ot-form .input-group .select2-container .select2-selection--single {
+    height: 40px;
+    border: solid 1px #c6c6c6;
+}
+.sn-ot-form .input-group .select2-container .select2-selection--single .select2-selection__rendered {
+    line-height: 38px;
+}
+.sn-ot-form .input-group .select2-container .select2-selection--single .select2-selection__arrow {
+    height: 38px;
+}
+.sn-ot-form .input-group .select2-container .select2-selection--multiple .select2-selection__choice {
+    padding: 5px;
+}
+.select2-container .select2-results ul li {
+    padding: 10px;
+    margin-bottom: 0;
+}
+.select2-container--default .select2-search--dropdown .select2-search__field {
+    border-radius: 0;
+    margin: 0;
+}
+.select2-container .select2-results ul li.select2-results__option--highlighted {
+    background-color: #0085ba;
+}
+.sn-ot-form .input-group .input-hint {
+    color: #a6a6a6;
+    font-size: 12px;
+}
+.sn-ot-form .input-group label.error {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-size: 11px;
+    color: #aa0000;
+}
+/*---------------*/
+
+/* Carriers Page */
+.sn-ot-carriers-page {
+    font-family: "Helvetica Neue";
+    margin: 40px 20px 20px 0;
+}
+
+.sn-ot-carriers-page .carriers-box {
+    margin-left: 300px;
+    background: #fff;
+}
+
+.sn-ot-carriers-page .carriers-box .carriers-form {
+    padding: 30px 35px;
+}
+.sn-ot-carriers-page .carriers-box .footer {
+    text-align: right;
+    padding: 10px;
+    background: #f9f9f9;
+    border-top: solid 1px #eeeeee;
+}
+.sn-ot-carriers-page .carriers-box .footer .button {
+    padding: 3px 18px;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+@media (max-width: 1000px) {
+    .sn-ot-carriers-page .carriers-box {
+        margin-left: unset;
+    }
+}
+/*-------------*/
+
+/* Setting Page */
+.sn-ot-setting-page {
+    font-family: "Helvetica Neue";
+    margin: 40px 20px 20px 0;
+}
+
+.sn-ot-setting-page .setting-box {
+    margin-left: 300px;
+    background: #fff;
+}
+
+.sn-ot-setting-page .setting-box .setting-form {
+    padding: 30px 35px;
+}
+.sn-ot-setting-page .setting-box .footer {
+    text-align: right;
+    padding: 10px;
+    background: #f9f9f9;
+    border-top: solid 1px #eeeeee;
+}
+.sn-ot-setting-page .setting-box .footer .button {
+    padding: 3px 18px;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+@media (max-width: 1000px) {
+    .sn-ot-setting-page .setting-box {
+        margin-left: unset;
+    }
+}
+/*-------------*/
+
+/* Order Detail page widget */
+.sn-ot-meta-box #sn_ot_carrier_name {
+    width: 100%;
+}
+.sn-ot-meta-box .tracking-number-list .tracking-code-input {
+    width: 57%;
+    display: inline-block;
+}
+.sn-ot-meta-box .tracking-number-list .tracking-code-status-select {
+    width: 40%;
+    display: inline-block;
+    float: right;
+}
+.sn-ot-meta-box .button-section .remove-tracking-detail {
+    float: right;
+    color: #b32d2e;
+}
+/*--------------------------*/
